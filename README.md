@@ -13,7 +13,7 @@
 - has_many :groups_users
 - has_many :chat_groups, through: groups_users
 
-## groupテーブル
+## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |group_name|strings|null: false, unique: true|
