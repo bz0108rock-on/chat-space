@@ -1,22 +1,23 @@
 .side-bar
-  .side-bar__user
-    .side-bar__user-content
-    .side-bar__user-content--name
-      ユーザーネーム
-    %ul.side-bar__lists
-      %li.side-bar__lists--edit
+  .side-header
+    .side-header__box
+      .side-header__box__user-name
+        ユーザーネーム
+    %ul.side-header__box__menu
+      %li.side-header__box__menu__edit
         = fa_icon 'edit'
-      %li.side-bar__lists--cog
+      %li.side-header__box__menu__cog
         = fa_icon 'cog'
     
-  .side-bar-groups
-    .side-bar-groups__name
-      test1
-    .side-bar-groups__message
-      まだメッセージはありません
+  .groups
+    .group
+      .group__group-name
+        test1
+      .group__group-message
+        まだメッセージはありません
 
-    .side-bar-groups__name
-      test2
-    .side-bar-groups__message
-      まだメッセージはありません
+      .group__group-name
+        test2
+      .group__group-message
+        まだメッセージはありません
 
