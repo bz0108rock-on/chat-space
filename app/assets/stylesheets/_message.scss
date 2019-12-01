@@ -25,6 +25,10 @@ $white: #ffffff;
 
       &__menu {
       display: flex;
+        
+        li {
+          font-size: 100%;
+        }
 
         &__edit {
           margin-left: 0.3rem;
@@ -49,6 +53,11 @@ $white: #ffffff;
 
     .group {
       margin-bottom: 40px;
+
+      a {
+        text-decoration: none;
+        color: $white;
+      }
 
       &__group-name {
       font-size: 15px;
@@ -169,6 +178,10 @@ $white: #ffffff;
             right: 10px;
             cursor: pointer;
             list-style: none;
+
+            li {
+              font-size: 100%;
+            }
 
             &__file {
               display: none;
