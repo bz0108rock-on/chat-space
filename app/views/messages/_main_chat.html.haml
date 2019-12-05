@@ -2,9 +2,11 @@
   .main-header
     .main-header--left-box
       .main-header--left-box__group
-        グループ名
+        = @group.name
       .main-header-left-box__member-list
-        Member : 
+        %p Members : 
+        - @group.users.each do |user|
+          = user.name
         .main-header-left-box__member-list__member
         メンバー名
     .main-header__edit-btn
