@@ -11,21 +11,13 @@
       Edit
 
   .messages
-    .message
-      .message__upper-info
-        .message__upper-info__talker
-          メンバー名
-        .message__upper-info__data
-          2019/11/16(Sat) 06:56:51
-      .message__text
-        this is a first message.
-        
+    = render @messages
+  
   .form
-    .form__new-message
-      = form_for [@group, @message] do |f|
-        = f.text_field :content, class: 'form__message', placeholder: 'type a message'
-        .form__mask
-          = f.label :image, class: 'form__mask__image' do
-            = fa_icon 'picture-o', class: 'icon'
-            = f.file_field :image, class: 'hidden'
-        = f.submit 'Send', class: 'form__submit'
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+      .form__mask
+        = f.label :image, class: 'form__mask__image' do
+          = fa_icon 'picture-o', class: 'icon'
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'form__submit'
