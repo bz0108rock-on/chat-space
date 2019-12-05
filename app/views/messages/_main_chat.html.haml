@@ -7,10 +7,8 @@
         %p Members : 
         - @group.users.each do |user|
           = user.name
-        .main-header-left-box__member-list__member
-        メンバー名
     .main-header__edit-btn
-      Edit
+      = link_to "Edit", edit_group_path(@group), class: 'main-header__edit-btn__inside'
 
   .messages
     = render @messages
