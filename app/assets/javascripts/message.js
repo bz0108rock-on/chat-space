@@ -65,7 +65,6 @@ $(function(){
     })
     .fail(function(messages) {
       alert('自動更新に失敗しました');
-      console.log('error');
     })
   }
   setInterval(reloadMessages, 3000);
