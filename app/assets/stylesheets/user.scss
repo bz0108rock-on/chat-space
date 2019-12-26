@@ -46,7 +46,11 @@
       color: #fff;
       background-color: #ccc;
       font-size: 14px;
-      border: none;
+
+      a {
+        text-decoration: none;
+        color: $lite-blue;
+      }
     }
   }
 
